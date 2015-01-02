@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#
+# simple script to compile the scripts as text into
+
+OSACOMPILE=/usr/bin/osacompile
+SRCDIR=src
+SRCEXT=applescript
+SCPTDIR=scpt
+SCPTEXT=scpt
+
+# make sure our destination directory exists
+mkdir -p $SCPTDIR
+
+# get all the source files, and compile them
+find $SRCDIR -iname "*.$SRCEXT" | while read SRC
+do
+	SCPT=`basename "$SRC" .$SRCEXT`.$SCPTEXT
+	echo "Compiling $SRC...." >&2
+	$OSACOMPILE -o "$SCPTDIR/$SCPT" "$SRC"
+done
+
+echo "Done." >&2
