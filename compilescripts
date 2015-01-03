@@ -5,7 +5,7 @@
 OSACOMPILE=/usr/bin/osacompile
 SRCDIR=src
 SRCEXT=applescript
-SCPTDIR=scpt
+SCPTDIR=script
 SCPTEXT=scpt
 
 # make sure our destination directory exists

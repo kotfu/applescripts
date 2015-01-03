@@ -5,5 +5,5 @@
 DEST=~/Library/Scripts
 
 echo "Installing scripts to $DEST...." >&2
-cp scpt/*.scpt $DEST
+cp script/*.scpt $DEST
 echo "Done." >&2
