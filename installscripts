@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+# install the scripts which have been compiled
+
+DEST=~/Library/Scripts
+
+echo "Installing scripts to $DEST...." >&2
+cp scpt/*.scpt $DEST
+echo "Done." >&2

@@ -11,3 +11,8 @@ To create usable script files, just type:
 	
 Then go look in the `scpt` directory, and you will see all the usable script files.
 
+To install the scripts, type:
+
+	$ ./installscripts
+
+which will put all the scripts into the `Library/Scripts` folder in your home directory.
