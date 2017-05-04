@@ -3,7 +3,9 @@
 # install the scripts which have been compiled
 
 DEST=~/Library/Scripts
+# this bit of magic does parameter expansion in a variable
+DEST="${DEST/#\~/$HOME}"
 
 echo "Installing scripts to $DEST...." >&2
-cp script/*.scpt $DEST
+cp script/*.scpt "$DEST"
 echo "Done." >&2
