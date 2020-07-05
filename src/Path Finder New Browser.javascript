@@ -1,3 +1,4 @@
+#!/usr/bin/env osascript -l JavaScript
 /*
 a script to open a new Path Finder window
 

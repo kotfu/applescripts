@@ -1,3 +1,4 @@
+#!/usr/bin/env osascript -l JavaScript
 /*
 
 ## OmniFocus Quick Entry
@@ -42,7 +43,7 @@ TODO - save and restore the clipboard if there is selected text. I have basic co
 TODO - figure out what to do if something besides text is selected
 */
 
-var omnifocusBundleID = 'com.omnigroup.OmniFocus2';
+var omnifocusBundleID = 'com.omnigroup.OmniFocus3';
 
 var se = Application('System Events');
 se.includeStandardAdditions = true;  
